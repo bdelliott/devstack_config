@@ -1,0 +1,31 @@
+DATABASE_USER=root
+DATABASE_PASSWORD=qwerty
+
+VERBOSE=1
+
+LOGFILE=/home/bde/logs/stack.log
+SCREEN_LOGDIR=/home/bde/logs/screen
+RABBIT_PASSWORD=qwerty
+SERVICE_TOKEN=qwerty
+SERVICE_PASSWORD=qwerty
+ADMIN_PASSWORD=qwerty
+
+#EXTRA_OPTS=(sql_dbpool_enable=true)
+
+#NOVA_REPO=https://github.com/bdelliott/nova.git
+#NOVA_BRANCH=dbpool_fix
+
+
+## timing tweaks for exercises on slow vm:
+
+# give extra time for servers to become active:
+ACTIVE_TIMEOUT=180
+BOOT_TIMEOUT=120
+
+# increase euca timeouts:
+ASSOCIATE_TIMEOUT=60
+RUNNING_TIMEOUT=240
+
+# volumes timeouts:
+VOLUME_TIMEOUT=180
+VOLUME_DELETE_TIMEOUT=180
